@@ -19,3 +19,7 @@ print(l1)
 
 l1[0]=44
 print(l1)
+
+s1='hello'
+s1=s1.replace('l','a')
+s1.index('e')
