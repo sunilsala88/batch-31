@@ -16,3 +16,25 @@ if v:
     print(v)
 else:
     print('it does not exist')
+
+
+
+foreign_exchange = {
+    "base_currency": "USD",
+    "exchange_rates": {
+        "EUR": {
+            "current_rate": 0.85,
+            "historical_rates": [
+                {"date": "2024-01-10", "rate": 0.84},
+                {"date": "2024-01-09", "rate": 0.85}
+            ]
+        },
+        "JPY": {
+            "current_rate": 110.00,
+            "historical_rates": [
+                {"date": "2024-01-10", "rate": 109.50},
+                {"date": "2024-01-09", "rate": 110.20}
+            ]
+        }
+    }
+}
