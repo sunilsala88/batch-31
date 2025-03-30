@@ -27,3 +27,12 @@ for i in a:
 
 Prices=[100, 105, 110]
 Volumes=[200, 150, 300]
+
+sum_of_mul=0
+sum_of_vol=0
+for i in range(len(Prices)):
+    p,v=Prices[i],Volumes[i]
+    sum_of_mul=sum_of_mul+p*v
+    sum_of_vol=sum_of_vol+v
+
+print(sum_of_mul/sum_of_vol)
