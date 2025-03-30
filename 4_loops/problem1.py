@@ -13,4 +13,17 @@ for i in range(num_fib-2):
     fib1=fib2
     fib2=current_fib
 
+#iterable
 
+
+string1='fessorpro'
+for i in string1:
+    print(i)
+
+a=(44,55,66)
+for i in a:
+    print(i)
+
+
+Prices=[100, 105, 110]
+Volumes=[200, 150, 300]
