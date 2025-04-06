@@ -69,16 +69,34 @@ print(a,b)
 print(temp)
 
 
+def double_money(money:int , inter:int)-> int:
+    """
+    this function will tell you how many years it will take to double your investment
+    """
 
-money=1000
-initial_money=money
-annual_ret=5
-years=0
+    money=money
+    initial_money=money
+    annual_ret=inter
+    years=0
 
-while True:
-    if money>2*initial_money:
-        break
-    money=money+(money*(annual_ret/100))
-    years=years+1
+    while True:
+        if money>2*initial_money:
+            break
+        money=money+(money*(annual_ret/100))
+        years=years+1
 
-print(years)
+    return (years)
+
+# y=double_money(1000,5)
+# print(y)
+
+
+def get_intro(name:str,age:int)->str:
+    """
+    return a intro
+    """
+    intro="my name is "+name+' and my age is '+ str(age)
+    return intro
+
+i=get_intro('vishal',30)
+print(i)
