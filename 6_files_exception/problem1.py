@@ -6,7 +6,7 @@ def print_stocks():
         print(i,":",j)
 
 def get_portfoilio():
-    portfolio=[]
+    portfolio={}
 
     while True:
         stock_name=input('enter the stock name (press q to quit)')
@@ -21,7 +21,7 @@ def get_portfoilio():
 
         found=stock_prices.get(stock_name)
         if found:
-            portfolio.append(stock_name)
+            portfolio.update({stock_name:found})
         else:
             print('stock does not exist')
 
@@ -30,3 +30,13 @@ def get_portfoilio():
 print_stocks()
 p=get_portfoilio()
 print(p)
+
+f=open('data.txt','w')
+total=0
+for stock,price in p.items():
+    sent=f"{stock}:{price}\n"
+    total=total+price
+    f.write(sent)
+sent=f"total:{total}\n"
+f.write(sent)
+f.close()

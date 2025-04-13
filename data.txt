@@ -1,0 +1,4 @@
+amzn:555
+goog:678
+tsla:333
+total:1566
