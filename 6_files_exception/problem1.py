@@ -27,16 +27,20 @@ def get_portfoilio():
 
     return (portfolio)
 
+
+
+def save_data(p)->None:
+    f=open('data.txt','w')
+    total=0
+    for stock,price in p.items():
+        sent=f"{stock}:{price}\n"
+        total=total+price
+        f.write(sent)
+    sent=f"total:{total}\n"
+    f.write(sent)
+    f.close()
+
 print_stocks()
 p=get_portfoilio()
 print(p)
-
-f=open('data.txt','w')
-total=0
-for stock,price in p.items():
-    sent=f"{stock}:{price}\n"
-    total=total+price
-    f.write(sent)
-sent=f"total:{total}\n"
-f.write(sent)
-f.close()
+save_data(p)
