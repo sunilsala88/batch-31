@@ -119,14 +119,58 @@ student(firstname="John", lastname="Doe")
 student(lastname="Doe", firstname="John")
 
 
-Prices=[100, 105, 110]
-Volumes=[200, 150, 300]
+def get_vwap(prices:list,volumes:list)->int:
+    """
+    calculates vwap for the give list of volume and prices
+    """
+    Prices=prices
+    Volumes=volumes
 
-sum_of_mul=0
-sum_of_vol=0
-for i in range(len(Prices)):
-    p,v=Prices[i],Volumes[i]
-    sum_of_mul=sum_of_mul+p*v
-    sum_of_vol=sum_of_vol+v
+    sum_of_mul=0
+    sum_of_vol=0
+    for i in range(len(Prices)):
+        p,v=Prices[i],Volumes[i]
+        sum_of_mul=sum_of_mul+p*v
+        sum_of_vol=sum_of_vol+v
 
-print(sum_of_mul/sum_of_vol)
+    return (sum_of_mul/sum_of_vol)
+
+v=get_vwap([12,3,4,6],[55,66,77,88])
+print(v)
+
+
+
+
+
+# def power(x):
+#     return x**2
+
+# power = lambda x: x * 2
+
+# x=2
+# n=power(2)
+# print(n)
+
+
+
+
+def modify_value(x):
+    x = 10
+
+num = 5
+modify_value(num)
+print(num)
+
+def modify_list(lst):
+    lst.append(4)
+
+my_list = [1, 2, 3]
+modify_list(my_list)
+print(my_list)
+
+def modify_list(lst):
+    lst.update({3:4})
+
+my_list = {1:2}
+modify_list(my_list)
+print(my_list)
