@@ -19,7 +19,7 @@ def get_portfoilio():
             print('we cannot trade this stock')
             continue
 
-        found=stock_prices.get(stock_name)
+        found=stock_prices[stock_name]
         if found:
             portfolio.update({stock_name:found})
         else:
