@@ -8,12 +8,12 @@
 
 
 
-# import file1 as f1
+import file1 as f1
 
-# print(f1.a)
-# print(f1.get_number())
+print(f1.a)
+print(f1.get_number())
 
-# b1=f1.Broker('jay',123,1000)
+b1=f1.Broker('jay',123,1000)
 
 
 from file1 import get_number

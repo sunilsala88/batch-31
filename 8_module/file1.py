@@ -47,3 +47,4 @@ def get_number():
 
 if __name__=="__main__":
     print('this is file 1')
+    print(__name__)
