@@ -42,6 +42,7 @@ class Broker:
 a=100
 
 def get_number():
+     print(a)
      return 200
 
 if __name__=="__main__":
