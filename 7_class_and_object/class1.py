@@ -137,7 +137,7 @@ print(c1.pi)
 
 
 class Broker:
-    stock_prices={'goog':400,'amzn':900,'tsla':780}
+    stock_prices={'goog':400,'amzn':900,'tsla':200}
      
     def __init__(self,name,acc_no,money):
           self.name=name
@@ -147,13 +147,41 @@ class Broker:
     
     def get_portfolio(self):
         if self.portfolio!={}:
-             for i,j in self.portfolio.items():
+            for i,j in self.portfolio.items():
                   print(i,j)
+            print('-----------------')
         else:
              print('empty')
     def buy(self,stock_name):
-         pass
+        found=self.stock_prices.get(stock_name)
+        if found:
+            if self.wallet>found:
+                self.portfolio.update({stock_name:found})
+                self.wallet=self.wallet-found
+                print(f'bought {stock_name} at price {found}')
+            else:
+                 print('not enough money')
+        else:
+             print('stock not found')
+        
     
     def sell(self,stock_name):
-         pass
-         
+        found=self.portfolio.get(stock_name)
+        if found:
+              self.portfolio.pop(stock_name)
+              self.wallet=self.wallet+found
+              print(f'sold {stock_name} at price {found}')
+        else:
+             print('stock not found')
+
+
+Broker.stock_prices.update({'nifty':6000})
+user1=Broker('jamie',457,1000)
+user1.get_portfolio()
+user1.buy('goog')
+user1.get_portfolio()
+user1.buy('tsla')
+user1.get_portfolio()
+user1.sell('tsla')
+user1.get_portfolio()
+print(user1.stock_prices)
