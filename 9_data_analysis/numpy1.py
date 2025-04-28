@@ -26,7 +26,10 @@ print(np3)
 #indexing
 print(np3[2,1])
 #sling
-print(np3[2,1:])
+print(np3[0,:])
+
+print(np.arange(25).reshape(5,5))
+print(np.random.randint(100,200,25).reshape(5,5))
 
 # import datetime as dt
 # print(dt.datetime.now())
