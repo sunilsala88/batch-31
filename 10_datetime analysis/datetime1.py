@@ -54,3 +54,9 @@ print(d5)
 f='%b %A %Y'
 s=d5.strftime(f)
 print(s)
+print(d5-dt.timedelta(days=365))
+
+
+def main():
+    print('this is main strategy')
+    print(dt.datetime.now())
