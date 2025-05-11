@@ -57,6 +57,18 @@ print(s)
 print(d5-dt.timedelta(days=365))
 
 
+import time
 def main():
     print('this is main strategy')
     print(dt.datetime.now())
+    time.sleep(1)
+
+# while True:
+#     #run main func every min
+#     if dt.datetime.now().second==1:
+#         main()
+
+#     #run main func every 5 min
+#     if dt.datetime.now().second==1 and dt.datetime.now().minute in range(1,60,5):
+#         main()
+
