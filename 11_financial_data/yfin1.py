@@ -3,11 +3,11 @@
 
 #pip install yfinance
 import yfinance as yf
-data=yf.download('TSLA')
+data=yf.download('TSLA',multi_level_index=False)
 print(data)
-print(data.columns)
-l1=[]
-for i in data.columns:
-    l1.append(i[0])
-data.columns=l1
-print(data)
+# print(data.columns)
+# l1=[]
+# for i in data.columns:
+#     l1.append(i[0])
+# data.columns=l1
+# print(data)
