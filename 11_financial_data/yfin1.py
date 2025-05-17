@@ -11,3 +11,5 @@ print(data)
 #     l1.append(i[0])
 # data.columns=l1
 # print(data)
+d=yf.download(['TSLA','AMZN'],multi_level_index=False)
+print(d)
