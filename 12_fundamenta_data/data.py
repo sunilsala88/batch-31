@@ -27,3 +27,24 @@ print(y1)
 data=pd.Series(y1.info)
 print(data)
 data.to_csv('data.csv')
+
+symbols=['TSLA',"GOOG",'MSFT',"AAPL",'NVDA']
+mark_cap=[]
+
+for i in symbols:
+    b=yf.Ticker(i).get_info()
+    mark_cap.append(b.get('marketCap'))
+
+print(mark_cap)
+for i in range(len(symbols)):
+    print(symbols[i],mark_cap[i])
+
+max=mark_cap[0]
+name=''
+for i in range(len(mark_cap)):
+    if max<mark_cap[i]:
+        max=mark_cap[i]
+        name=symbols[i]
+print('\n')
+print(name,max)
+
