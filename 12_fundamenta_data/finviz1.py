@@ -22,8 +22,7 @@ stock = finvizfinance('tsla').ticker_full_info()
 from finvizfinance.screener.overview import Overview
 
 foverview = Overview()
-filters_dict = {'Index':'NASDAQ 100','Sector':'Technology'}
+filters_dict = {'Index':'S&P 500','Sector':'Technology'}
 foverview.set_filter(filters_dict=filters_dict)
 df = foverview.screener_view()
-print(df)
-df.to_csv('data.csv')
+print(df.sort_values(by='P/E').dropna(axis=0))
