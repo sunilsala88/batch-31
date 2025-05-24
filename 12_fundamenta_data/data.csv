@@ -1,173 +1,45 @@
-,0
-address1,1 Tesla Road
-city,Austin
-state,TX
-zip,78725
-country,United States
-phone,512 516 8177
-website,https://www.tesla.com
-industry,Auto Manufacturers
-industryKey,auto-manufacturers
-industryDisp,Auto Manufacturers
-sector,Consumer Cyclical
-sectorKey,consumer-cyclical
-sectorDisp,Consumer Cyclical
-longBusinessSummary,"Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The Automotive segment offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty after-sales vehicle, used vehicles, body shop and parts, supercharging, retail merchandise, and vehicle insurance services. This segment also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. The Energy Generation and Storage segment engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. This segment also provides services and repairs to its energy product customers, including under warranty; and various financing options to its residential customers. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas."
-fullTimeEmployees,125665
-companyOfficers,"[{'maxAge': 1, 'name': 'Mr. Elon R. Musk', 'age': 53, 'title': 'Co-Founder, Technoking of Tesla, CEO & Director', 'yearBorn': 1971, 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Vaibhav  Taneja', 'age': 46, 'title': 'Chief Financial Officer', 'yearBorn': 1978, 'fiscalYear': 2024, 'totalPay': 306846, 'exercisedValue': 9653338, 'unexercisedValue': 347210016}, {'maxAge': 1, 'name': 'Mr. Xiaotong  Zhu', 'age': 44, 'title': 'Senior Vice President of APAC', 'yearBorn': 1980, 'fiscalYear': 2024, 'totalPay': 518250, 'exercisedValue': 0, 'unexercisedValue': 697024064}, {'maxAge': 1, 'name': 'Travis  Axelrod', 'title': 'Head of Investor Relations', 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Franz  von Holzhausen', 'title': 'Chief Designer', 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. John  Walker', 'age': 61, 'title': 'Vice President of Sales - North America', 'yearBorn': 1963, 'fiscalYear': 2024, 'totalPay': 121550, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Peter  Bannon', 'title': 'Chip Architect', 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Turner  Caldwell', 'title': 'Engineering Manager', 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Rodney D. Westmoreland Jr.', 'title': 'Director of Construction Management', 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}, {'maxAge': 1, 'name': 'Mr. Lars  Moravy', 'title': 'Vice President of Vehicle Engineering', 'fiscalYear': 2024, 'exercisedValue': 0, 'unexercisedValue': 0}]"
-auditRisk,4
-boardRisk,10
-compensationRisk,10
-shareHolderRightsRisk,9
-overallRisk,10
-governanceEpochDate,1746057600
-compensationAsOfEpochDate,1735603200
-executiveTeam,[]
-maxAge,86400
-priceHint,2
-previousClose,342.82
-open,346.065
-dayLow,342.33
-dayHigh,351.62
-regularMarketPreviousClose,342.82
-regularMarketOpen,346.065
-regularMarketDayLow,342.33
-regularMarketDayHigh,351.62
-payoutRatio,0.0
-beta,2.434
-trailingPE,199.98857
-forwardPE,108.018524
-volume,90797726
-regularMarketVolume,90797726
-averageVolume,123506214
-averageVolume10days,105136550
-averageDailyVolume10Day,105136550
-bid,328.7
-ask,363.64
-bidSize,1
-askSize,1
-marketCap,1127271628800
-fiftyTwoWeekLow,167.41
-fiftyTwoWeekHigh,488.54
-priceToSalesTrailing12Months,11.776269
-fiftyDayAverage,266.9682
-twoHundredDayAverage,295.9826
-trailingAnnualDividendRate,0.0
-trailingAnnualDividendYield,0.0
-currency,USD
-tradeable,False
-enterpriseValue,1104167305216
-profitMargins,0.063829996
-floatShares,2803584705
-sharesOutstanding,3220960000
-sharesShort,81317940
-sharesShortPriorMonth,76463964
-sharesShortPreviousMonthDate,1743379200
-dateShortInterest,1745971200
-sharesPercentSharesOut,0.0252
-heldPercentInsiders,0.1288
-heldPercentInstitutions,0.5021
-shortRatio,0.58
-shortPercentOfFloat,0.029000001
-impliedSharesOutstanding,3220960000
-bookValue,23.184
-priceToBook,15.095757
-lastFiscalYearEnd,1735603200
-nextFiscalYearEnd,1767139200
-mostRecentQuarter,1743379200
-earningsQuarterlyGrowth,-0.706
-netIncomeToCommon,6106999808
-trailingEps,1.75
-forwardEps,3.24
-lastSplitFactor,3:1
-lastSplitDate,1661385600
-enterpriseToRevenue,11.535
-enterpriseToEbitda,87.981
-52WeekChange,1.0004573
-SandP52WeekChange,0.12250078
-quoteType,EQUITY
-currentPrice,349.98
-targetHighPrice,465.0
-targetLowPrice,115.0
-targetMeanPrice,291.90332
-targetMedianPrice,300.0
-recommendationMean,2.58333
-recommendationKey,hold
-numberOfAnalystOpinions,42
-totalCash,36996001792
-totalCashPerShare,11.486
-ebitda,12549999616
-totalDebt,13127999488
-quickRatio,1.376
-currentRatio,1.996
-totalRevenue,95724003328
-debtToEquity,17.407
-revenuePerShare,29.867
-returnOnAssets,0.03724
-returnOnEquity,0.087740004
-grossProfits,16906999808
-freeCashflow,3360000000
-operatingCashflow,16837000192
-earningsGrowth,-0.707
-revenueGrowth,-0.092
-grossMargins,0.17662
-ebitdaMargins,0.13111
-operatingMargins,0.0255
-financialCurrency,USD
-symbol,TSLA
-language,en-US
-region,US
-typeDisp,Equity
-quoteSourceName,Nasdaq Real Time Price
-triggerable,True
-customPriceAlertConfidence,HIGH
-corporateActions,[]
-postMarketTime,1747439999
-regularMarketTime,1747425601
-exchange,NMS
-messageBoardId,finmb_27444752
-exchangeTimezoneName,America/New_York
-exchangeTimezoneShortName,EDT
-gmtOffSetMilliseconds,-14400000
-market,us_market
-esgPopulated,False
-longName,"Tesla, Inc."
-fullExchangeName,NasdaqGS
-averageDailyVolume3Month,123506214
-fiftyTwoWeekLowChange,182.57
-fiftyTwoWeekLowChangePercent,1.0905561
-fiftyTwoWeekRange,167.41 - 488.54
-fiftyTwoWeekHighChange,-138.56
-fiftyTwoWeekHighChangePercent,-0.28362057
-fiftyTwoWeekChangePercent,100.04573
-earningsTimestamp,1745352420
-earningsTimestampStart,1753128000
-earningsTimestampEnd,1753473600
-earningsCallTimestampStart,1745357400
-earningsCallTimestampEnd,1745357400
-isEarningsDateEstimate,True
-epsTrailingTwelveMonths,1.75
-epsForward,3.24
-epsCurrentYear,1.90808
-priceEpsCurrentYear,183.41998
-fiftyDayAverageChange,83.01181
-fiftyDayAverageChangePercent,0.31094268
-twoHundredDayAverageChange,53.997406
-twoHundredDayAverageChangePercent,0.1824344
-sourceInterval,15
-exchangeDataDelayedBy,0
-averageAnalystRating,2.6 - Hold
-regularMarketChangePercent,2.0885606
-regularMarketPrice,349.98
-marketState,CLOSED
-hasPrePostMarketData,True
-firstTradeDateMilliseconds,1277818200000
-postMarketChangePercent,-2.80874
-postMarketPrice,340.15
-postMarketChange,-9.83002
-regularMarketChange,7.1600037
-regularMarketDayRange,342.33 - 351.62
-cryptoTradeable,False
-shortName,"Tesla, Inc."
-displayName,Tesla
-trailingPegRatio,5.5087
+,Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume
+0,AAPL,Apple Inc,Technology,Consumer Electronics,USA,2916520000000.0,30.47,195.27,-0.0302,77933585.0
+1,ADBE,Adobe Inc,Technology,Software - Application,USA,173760000000.0,26.85,407.69,-0.016,2081548.0
+2,ADI,Analog Devices Inc,Technology,Semiconductors,USA,104450000000.0,57.3,210.47,-0.0069,4847213.0
+3,ADP,Automatic Data Processing Inc,Technology,Software - Application,USA,130340000000.0,32.87,321.09,-0.0017000000000000001,958293.0
+4,ADSK,Autodesk Inc,Technology,Software - Application,USA,63190000000.0,63.34,295.35,0.0012,3196141.0
+5,AMAT,Applied Materials Inc,Technology,Semiconductor Equipment & Materials,USA,126400000000.0,19.17,157.51,-0.018799999999999997,5681747.0
+6,AMD,Advanced Micro Devices Inc,Technology,Semiconductors,USA,178860000000.0,80.86,110.31,-0.0036,30772910.0
+7,ANSS,Ansys Inc,Technology,Software - Application,USA,30080000000.0,50.8,342.17,-0.0043,429394.0
+8,APP,Applovin Corp,Technology,Software - Application,USA,119890000000.0,63.97,354.29,0.008,5309740.0
+9,ARM,Arm Holdings plc. ADR,Technology,Semiconductors,United Kingdom,134430000000.0,170.69,127.18,-0.016200000000000003,2958936.0
+10,ASML,ASML Holding NV,Technology,Semiconductor Equipment & Materials,Netherlands,288070000000.0,30.87,732.49,-0.0111,1518708.0
+11,AVGO,Broadcom Inc,Technology,Semiconductors,USA,1075430000000.0001,110.32,228.72,-0.0079,15365821.0
+12,CDNS,"Cadence Design Systems, Inc",Technology,Software - Application,USA,86150000000.0,79.91,315.51,-0.0034999999999999996,1010433.0
+13,CDW,CDW Corp,Technology,Information Technology Services,USA,23990000000.0,22.58,182.16,-0.0067,1359784.0
+14,CRWD,Crowdstrike Holdings Inc,Technology,Software - Infrastructure,USA,113480000000.0,,455.59,0.0259,4449039.0
+15,CSCO,"Cisco Systems, Inc",Technology,Communication Equipment,USA,249920000000.0,25.86,63.11,-0.0039000000000000003,15634962.0
+16,CTSH,Cognizant Technology Solutions Corp,Technology,Information Technology Services,USA,39000000000.0,16.66,79.12,-0.0098,2243100.0
+17,DDOG,Datadog Inc,Technology,Software - Application,USA,39530000000.0,247.96,114.46,-0.0105,2854128.0
+18,FTNT,Fortinet Inc,Technology,Software - Infrastructure,USA,78960000000.0,42.46,103.16,-0.0044,3768616.0
+19,GFS,GlobalFoundries Inc,Technology,Semiconductors,USA,20210000000.0,,36.55,-0.0248,1490190.0
+20,INTC,Intel Corp,Technology,Semiconductors,USA,87460000000.0,,20.05,-0.024300000000000002,67150303.0
+21,INTU,Intuit Inc,Technology,Software - Application,USA,200880000000.0,58.6,720.13,0.0812,5318964.0
+22,KLAC,KLA Corp,Technology,Semiconductor Equipment & Materials,USA,100130000000.0,27.52,757.17,-0.013500000000000002,941935.0
+23,LRCX,Lam Research Corp,Technology,Semiconductor Equipment & Materials,USA,103690000000.0,22.58,81.06,-0.0182,8274388.0
+24,MCHP,"Microchip Technology, Inc",Technology,Semiconductors,USA,30220000000.0,,56.19,-0.032,10093345.0
+25,MDB,MongoDB Inc,Technology,Software - Infrastructure,USA,15190000000.0,,185.85,-0.014499999999999999,1248267.0
+26,MRVL,Marvell Technology Inc,Technology,Semiconductors,USA,52430000000.0,,60.69,-0.018799999999999997,17429406.0
+27,MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,3345980000000.0,34.79,450.18,-0.0103,16852678.0
+28,MSTR,Strategy,Technology,Software - Application,USA,101030000000.0,,369.51,-0.075,21285648.0
+29,MU,Micron Technology Inc,Technology,Semiconductors,USA,104350000000.0,22.44,93.37,-0.0154,16393587.0
+30,NVDA,NVIDIA Corp,Technology,Semiconductors,USA,3201840000000.0,44.66,131.29,-0.0116,197066818.0
+31,NXPI,NXP Semiconductors NV,Technology,Semiconductors,Netherlands,48540000000.0,20.93,192.15,-0.0222,3674101.0
+32,ON,ON Semiconductor Corp,Technology,Semiconductors,USA,17250000000.0,28.63,41.27,-0.0241,9856315.0
+33,PANW,Palo Alto Networks Inc,Technology,Software - Infrastructure,USA,124520000000.0,106.87,186.75,0.0033,4843212.0
+34,PAYX,Paychex Inc,Technology,Software - Application,USA,56220000000.0,32.46,156.09,-0.0006,1033369.0
+35,PLTR,Palantir Technologies Inc,Technology,Software - Infrastructure,USA,291000000000.0,538.47,123.31,0.0083,65607352.0
+36,QCOM,"Qualcomm, Inc",Technology,Semiconductors,USA,159630000000.0,14.8,145.38,-0.013500000000000002,8990394.0
+37,ROP,Roper Technologies Inc,Technology,Software - Application,USA,60960000000.0,40.9,567.03,-0.0036,375125.0
+38,SNPS,"Synopsys, Inc",Technology,Software - Infrastructure,USA,77130000000.0,36.89,498.85,-0.0092,669260.0
+39,TEAM,Atlassian Corporation,Technology,Software - Application,USA,54450000000.0,,206.82,-0.0074,2037449.0
+40,TTD,Trade Desk Inc,Technology,Software - Application,USA,36310000000.0,90.36,73.89,-0.0059,4837716.0
+41,TXN,Texas Instruments Inc,Technology,Semiconductors,USA,160160000000.0,33.4,176.3,-0.0217,7415889.0
+42,WDAY,Workday Inc,Technology,Software - Application,USA,63700000000.0,131.54,238.01,-0.1252,9906184.0
+43,ZS,Zscaler Inc,Technology,Software - Infrastructure,USA,39320000000.0,,254.1,0.0051,2002742.0
