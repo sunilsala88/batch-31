@@ -133,6 +133,19 @@ print(data)
 print('strategy started')
 logging.info('strategy started')
 
+def close_this_position(ticker_name):
+    ticker_name=ticker_name.replace('/','')
+    print(ticker_name)
+    try:
+        # p = trading_client.get_open_position(ticker_name)
+        # print(p)
+        c=trading_client.close_position(ticker_name)
+        print(c)
+        print('position closed')
+    except:
+        print('position does not exist')
+
+
 def get_all_open_orders():
     # params to filter orders by
     request_params = GetOrdersRequest(
@@ -231,6 +244,29 @@ def main_strategy_code():
         if pos_df.empty:
             print('we dont have any position')
             strategy(hist_df,ticker)
+
+        elif len(pos_df)!=0 and ticker.replace('/','') not in pos_df['symbol'].to_list():
+            print('we have some position but ticker is not in pos')
+            strategy(hist_df,ticker)
+        
+        elif len(pos_df)!=0 and ticker.replace('/','')  in pos_df['symbol'].to_list():
+            print('we have some pos and ticker is in pos')
+            curr_quant=float(pos_df[pos_df['symbol']==ticker.replace('/','')]['qty'].iloc[-1])
+            print('current quantity is',curr_quant)
+            if curr_quant==0:
+                print('my quantity is 0')
+                strategy(hist_df,ticker)
+               
+            elif curr_quant>0:
+                print('we are already long')
+                sell_condition=(hist_df['sma_20'].iloc[-1]<hist_df['sma_50'].iloc[-1]) and (hist_df['sma_20'].iloc[-2]>hist_df['sma_50'].iloc[-2])
+                # sell_condition=True
+                if sell_condition:
+                    print('sell condition is satisfied ')
+                    close_this_position(ticker)
+                else:
+                    print('sell condition not satisfied')
+
 
 current_time=dt.now(tz=time_zone)
 print(current_time)
