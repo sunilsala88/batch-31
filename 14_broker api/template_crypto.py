@@ -167,6 +167,41 @@ def get_all_position():
     pos_df.to_csv('position1.csv')
     return pos_df
 
+def trade_buy_stocks(ticker,closing_price):
+    print('placing market order')
+    # preparing orders
+    market_order_data = MarketOrderRequest(
+                        symbol=ticker,
+                        qty=1,
+                        side=OrderSide.BUY,
+                        time_in_force=TimeInForce.GTC
+                        )
+
+    # Market order
+    market_order = trading_client.submit_order(
+                    order_data=market_order_data
+                )
+    print(market_order)
+    print('done placing market order for ',ticker)
+
+def strategy(hist_df,ticker):
+    print('inside strategy conditional code ')
+    # print(hist_df)
+    print(ticker)
+    buy_condition=(hist_df['sma_20'].iloc[-1]>hist_df['sma_50'].iloc[-1]) and (hist_df['sma_20'].iloc[-2]<hist_df['sma_50'].iloc[-2])
+    # buy_condition=True
+    money=float(trading_client.get_account().cash)
+    money=money/3
+    print(money)
+    closing_price=hist_df['close'].iloc[-1]
+    if money>closing_price:
+        if buy_condition:
+            print('buy condition satisfied')
+            trade_buy_stocks(ticker,closing_price)
+        else:
+            print('no condition satisfied')
+    else:
+        print('we dont have enough money to trade')
 
 def main_strategy_code():
     logging.info('we are running strategy ')
@@ -175,6 +210,27 @@ def main_strategy_code():
     print(ord_df)
     print(pos_df)
 
+    for ticker in list_of_tickers:
+        print(ticker)
+        #fetch historical data and indicators
+        hist_df=get_historical_crypto_data(ticker,2,TimeFrameUnit.Minute)
+        print(hist_df)
+
+        money=float(trading_client.get_account().cash)
+        money=money/3
+        print(money)
+        ltp=hist_df['close'].iloc[-1]
+        print(ltp)
+        quantity=money//ltp
+        print(quantity)
+
+
+        if quantity==0:
+            continue
+        
+        if pos_df.empty:
+            print('we dont have any position')
+            strategy(hist_df,ticker)
 
 current_time=dt.now(tz=time_zone)
 print(current_time)
