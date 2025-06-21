@@ -4,6 +4,7 @@
 import pendulum as dt
 import logging
 import time
+import pandas as pd
 
 from alpaca.trading.requests import GetOrdersRequest,MarketOrderRequest
 from alpaca.trading.enums import OrderSide, QueryOrderStatus,TimeInForce
@@ -14,13 +15,17 @@ from alpaca.data.requests import CryptoBarsRequest
 
 from alpaca.trading.client import TradingClient
 
-list_of_tickers=["ETH/USD",'AAVE/USD']
+list_of_tickers=["ETH/USD",'AAVE/USD','SOL/USD']
 time_zone='America/New_York'
 strategy_name='crypto_sma'
 
 
 logging.basicConfig(level=logging.INFO, filename=f'{strategy_name}_{dt.now(tz=time_zone).date()}.log',filemode='a',format="%(asctime)s - %(message)s")
 
+from alpaca.trading.client import TradingClient
+api_key='PKCGQ99MC5FQA1P8ZSRE'
+secret_key='rkWLI1F2poiTbuERdzozfOLgVV6mrFKTH27Ugvb1'
+trading_client = TradingClient(api_key, secret_key, paper=True)
 
 import talib
 import pandas_ta as ta
@@ -128,15 +133,54 @@ print(data)
 print('strategy started')
 logging.info('strategy started')
 
+def get_all_open_orders():
+    # params to filter orders by
+    request_params = GetOrdersRequest(
+                        status=QueryOrderStatus.OPEN
+                    )
+
+    # orders that satisfy params
+    orders = trading_client.get_orders(filter=request_params)
+    new_order=[]
+    for elem in orders:
+        new_order.append(dict(elem))
+
+    order_df=pd.DataFrame(new_order)
+    
+    l=[i for i in list_of_tickers]
+    order_df=order_df[order_df['symbol'].isin(l)]
+    order_df.to_csv('orders1.csv')
+    return order_df
+
+def get_all_position():
+
+    pos=trading_client.get_all_positions()
+    new_pos=[]
+    for elem in pos:
+        new_pos.append(dict(elem))
+
+    pos_df=pd.DataFrame(new_pos)
+    # print(pos_df)
+    # filter pos that are in list_of_tickers
+    l=[i.replace("/","") for i in list_of_tickers]
+    pos_df=pos_df[pos_df['symbol'].str.replace('/','').isin(l)]
+    pos_df.to_csv('position1.csv')
+    return pos_df
+
+
 def main_strategy_code():
-    print('running main strategy')
+    logging.info('we are running strategy ')
+    ord_df=get_all_open_orders()
+    pos_df=get_all_position()
+    print(ord_df)
+    print(pos_df)
 
 
 current_time=dt.now(tz=time_zone)
 print(current_time)
 
 start_hour,start_min=9,36
-end_hour,end_min=9,37
+end_hour,end_min=9,50
 
 start_time=dt.datetime(current_time.year,current_time.month,current_time.day,start_hour,start_min,tz=time_zone)
 end_time=dt.datetime(current_time.year,current_time.month,current_time.day,end_hour,end_min,tz=time_zone)

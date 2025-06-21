@@ -1,0 +1,2 @@
+,asset_id,symbol,exchange,asset_class,asset_marginable,avg_entry_price,qty,side,market_value,cost_basis,unrealized_pl,unrealized_plpc,unrealized_intraday_pl,unrealized_intraday_plpc,current_price,lastday_price,change_today,swap_rate,avg_entry_swap_rate,usd,qty_available
+5,1cf35270-99ee-44e2-a77f-6fab902c7f80,SOLUSD,CRYPTO,crypto,False,141,0.9985,long,142.237324,140.7885,1.448824,0.0102907836932704,3.529442,0.0254451437734447,142.451,138.916256157,0.0254451418486625,,,,0.9985
