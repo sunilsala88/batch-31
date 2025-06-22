@@ -11,7 +11,6 @@ import logging
 
 from alpaca.trading.requests import GetOrdersRequest,MarketOrderRequest
 from alpaca.trading.enums import OrderSide, QueryOrderStatus,TimeInForce
-from zoneinfo import ZoneInfo
 from alpaca.data.timeframe import TimeFrame, TimeFrameUnit
 from alpaca.data.historical.stock import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
@@ -209,6 +208,7 @@ def trade_buy_stocks(ticker,closing_price):
     market_order
     print(market_order)
     print('done placing market order buy for ',ticker)
+    logging.info(f"buying {ticker} with closing price {closing_price}")
 
 def trade_sell_stocks(ticker,closing_price):
     print('placing market order')
@@ -228,6 +228,7 @@ def trade_sell_stocks(ticker,closing_price):
     market_order
     print(market_order)
     print('done placing market order sell for ',ticker)
+    logging.info(f"selling {ticker} with closing price {closing_price}")
 
 def strategy(hist_df,ticker):
     print('inside strategy conditional code ')
