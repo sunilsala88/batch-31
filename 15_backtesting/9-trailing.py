@@ -1,9 +1,10 @@
 from backtesting import Backtest, Strategy
 import yfinance as yf
-import pandas_ta as ta
+# import pandas_ta as ta
+import talib as ta
 
 def get_sma(closing_price,len):
-    return ta.sma(closing_price,len)
+    return ta.SMA(closing_price,len)
 
 class TrailingStopLossStrategy(Strategy):
     # Define the parameters for the strategy
@@ -53,4 +54,10 @@ stats = bt.run()
 print(stats)
 
 # Plot the backtest results
+bt.plot()
+
+
+output=bt.optimize(trailing_stop_pct=[0.01,0.02,0.03,0.04,0.05,0.06],maximize='Return [%]')
+print(output)
+print(output['_strategy'])
 bt.plot()
