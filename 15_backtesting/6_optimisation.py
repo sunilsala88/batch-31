@@ -122,4 +122,21 @@ print(trend(data['High'],data['Low'],data['Close']))
 bt=Backtest(data,Superstrategy,cash=10_000)
 output=bt.run()
 print(output)
+# bt.plot()
+
+
+# output=bt.optimize(l=range(5,25,2),m=range(1,10,1),maximize='Return [%]')
+# print(output)
+# print(output['_strategy'])
+# bt.plot()
+
+
+
+def custom_optimization(stats):
+    return stats['Win Rate [%]'] * stats['Return [%]']
+
+
+stats=bt.optimize(l=range(5,25,2),m=range(1,10,1),maximize=custom_optimization)
+print(stats)
+print(stats['_strategy'])
 bt.plot()

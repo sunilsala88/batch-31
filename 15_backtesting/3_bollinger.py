@@ -45,7 +45,7 @@ bt = Backtest(data, Bollinger_s,
               exclusive_orders=True,trade_on_close=True)
 
 output = bt.run()
-bt.plot()
+# bt.plot()
 print(output)
 
-output['_trades'].to_csv('trades.csv')
+# output['_trades'].to_csv('trades.csv')
