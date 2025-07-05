@@ -35,7 +35,7 @@ class Bollinger_s(Strategy):
 
 
 import yfinance as yf
-data=yf.download('MSFT',period='max',interval='1m',multi_level_index=False)
+data=yf.download('GOOG',period='5y',multi_level_index=False)
 print(data)
 
 upper,middle,lower=talib.BBANDS(data['Close'],10)
@@ -49,3 +49,15 @@ output = bt.run()
 print(output)
 
 # output['_trades'].to_csv('trades.csv')
+
+#optimize
+
+
+def custom_optimization(stats):
+    return stats['Return [%]']
+
+
+stats=bt.optimize(n1=range(5,50,2),maximize=custom_optimization)
+print(stats)
+print(stats['_strategy'])
+bt.plot()
