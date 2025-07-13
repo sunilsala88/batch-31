@@ -196,3 +196,4 @@ def supertrend(high, low, close, length=None, multiplier=None, offset=None, **kw
         f"SUPERTl{_props}": long,
         f"SUPERTs{_props}": short
     }
+
