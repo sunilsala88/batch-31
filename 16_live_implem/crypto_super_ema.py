@@ -332,7 +332,7 @@ def supertrend(high, low, close, length=7, multiplier=3.0, offset=0):
 
 import pendulum as dt
 import pandas as pd
-import pandas_ta as ta
+# import pandas_ta as ta
 # ta.supertrend()
 import time
 import logging
@@ -712,3 +712,8 @@ for ticker in l1:
 
 
 print('strategy stopped')
+
+
+
+#lim 100
+#lim 100
