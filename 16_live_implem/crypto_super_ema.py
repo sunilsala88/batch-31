@@ -592,11 +592,11 @@ def strategy_condition(hist_df_hourly,hist_df_daily,ticker):
 
 
     hourly_closing_price=hist_df_hourly['close'].iloc[-1]
-    atr_value=hist_df_daily['atr'].iloc[-1]
+    # atr_value=hist_df_daily['atr'].iloc[-1]
 
     if buy_condition:
         print('buy condition satisfied')
-        trade_buy_stocks(ticker,hourly_closing_price,hourly_closing_price-atr_value)
+        trade_buy_stocks(ticker,hourly_closing_price,hourly_closing_price)
     # elif sell_condition:
     #     print('sell condition satisfied')
     #     trade_sell_stocks(ticker,hourly_closing_price,hourly_closing_price+atr_value)
